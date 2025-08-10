@@ -29,21 +29,9 @@ while 1:
             result -= int(i)
         print(f"The result will be {result}")
 
-    elif "add" in ask:
-        ask = ask.split("add")
-        for i in ask:
-            result += int(i)
-        print(f"The result will be {result}")
-
-    elif "subtract" in ask:
-        ask = ask.split("subtract")
-        result = int(ask[0])
-        for i in ask[1:]:
-            result -= int(i)
-        print(f"The result will be {result}")
-
     elif ask in questions:
         print(questions[ask])
 
     else:
         print(f"sorry {name} i can't answer this question")
+
